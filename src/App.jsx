@@ -73,7 +73,7 @@ function App() {
             <div className="logo">
               <img src={apeLogo} alt="APE" className="nav-logo" />
             </div>
-            <div className="nav-links">
+            <div className="nav-links desktop-only">
               <a href="#services" className="nav-link" style={{ color: 'white' }} onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });

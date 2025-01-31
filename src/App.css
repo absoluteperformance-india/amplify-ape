@@ -468,6 +468,89 @@ body {
   .hero-container {
     grid-template-columns: 1fr;
   }
+
+  .top-bar {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  /* Adjust main container padding for mobile */
+  .main-container {
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Adjust hero section for mobile */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust service grid for mobile */
+  .service-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  /* Adjust partner logos for mobile */
+  .partner-logos {
+    gap: 1rem;
+  }
+
+  .partner-logo {
+    flex: 0 1 150px;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .contact {
+    height: auto;
+    padding: 3rem 1rem;
+  }
 }
 
 .nav-links {
@@ -614,4 +697,15 @@ section {
 
 .dialog-content {
   animation: dialogFadeIn 0.3s ease-out;
+}
+
+/* Mobile responsiveness for navigation */
+.desktop-only {
+  display: flex;  /* or whatever display type you're using for desktop */
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;  /* Added !important to ensure it overrides other styles */
+  }
 }
